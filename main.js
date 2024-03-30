@@ -216,7 +216,6 @@ const rateProduct = () => {
   function handleUpdateRatingState(getCurrentRatingValue) {
     for (let i = 0; i < 5; i++) {
       if (i < getCurrentRatingValue) {
-        console.log(getCurrentRatingValue);
         stars[i].classList.add("star-selected");
       } else {
         stars[i].classList.remove("star-selected");
@@ -246,7 +245,6 @@ const handleStepper = () => {
         productReviewInput.classList.add("show-review-screen");
         productStarRating.classList.add(".hide-star-rating");
       }
-      console.log(productTextArea.value);
       if (productTextArea.value.length) {
         alert("Please enter review");
         return;
