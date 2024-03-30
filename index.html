@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flipkart Products Review</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="" aria-label="Flipkart website link">
+          Flipkart
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="products-container">
+        <div class="products-list"></div>
+        <div class="products-review-container">
+          <div class="product-stepper">
+            <div class="progress"></div>
+            <div class="icon-wrapper active">
+              <p class="label">1</p>
+            </div>
+            <div class="icon-wrapper">
+              <p class="label">2</p>
+            </div>
+            <div class="icon-wrapper">
+              <p class="label">3</p>
+            </div>
+          </div>
+          <div class="rating-container">
+            <h3>Please provide your rating</h3>
+            <div class="product-star-rating"></div>
+          </div>
+          <div class="product-review-input">
+            <textarea
+              placeholder="Review product"
+              name="review"
+              rows="8"
+              cols="50"
+              class="product-textarea"
+              aria-rowcount="8"
+            ></textarea>
+            <span class="review-characters">0/100</span>
+          </div>
+          <div class="btn-group">
+            <div class="btn-prev">Prev</div>
+            <div class="btn-next">Next</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spinner-container">
+        <div class="spinner"></div>
+        <p>Loading Products.....</p>
+      </div>
+
+      <div class="products-error-container">
+        <img
+          src="./assets/error.png"
+          alt="product fetch failed"
+          loading="lazy"
+          width="60px"  
+          height="60px"
+        />
+        <p>Failed to load products</p>
+        <button class="retry-btn">Retry</button>
+      </div>
+    </main>
+  </body>
+</html>
