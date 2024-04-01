@@ -243,7 +243,7 @@ const handleStepper = () => {
       currentSelectedStep++;
       if (currentSelectedStep === 2) {
         productReviewInput.classList.add("show-review-screen");
-        productStarRating.classList.add(".hide-star-rating");
+        productStarRating.classList.add("hide-star-rating");
       }
       if (productTextArea.value.length) {
         alert("Please enter review");
@@ -251,7 +251,7 @@ const handleStepper = () => {
       }
       if (currentSelectedStep === 3) {
         productReviewInput.classList.remove("show-review-screen");
-        productStarRating.classList.remove(".hide-star-rating");
+        productStarRating.classList.remove("hide-star-rating");
       }
 
       if (
